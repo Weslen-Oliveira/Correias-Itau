@@ -1,0 +1,76 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding: 2em 0.8em 3.2em;
+}
+.swiper-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 0.3em;
+    max-width: 80%;
+}
+        
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    border-radius: 0.8em;
+    width: 20%;
+    max-width: 340px;
+    height: auto;
+    background-color: #636262;
+    padding-bottom: 1em;
+}
+        
+.swiper-slide:hover {
+    /* transform: translateY(-25px); */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+        
+.card-img {
+    width: 100%;
+    height: 15em;
+    border-radius: 0.5em  0.5em 0 0;
+    border-bottom: 0.5em solid darkorange;
+}
+        
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+        
+.tituloCardH3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    margin-top: 0.5em;
+    padding-block: 1em;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+        
+.linkCard {
+    width: 50%;
+    margin: auto;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: darkorange;
+}
+.linkCard:hover{
+    text-shadow: none;
+    color: darkorange;
+    border: 0.1em solid darkorange;
+    background-color: #636262;
+}
+/* .swiper-pagination-bullet-active {
+    background-color: #333;
+} */

@@ -1,0 +1,32 @@
+.divCards{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    border-radius: 0.8em;
+    width: 20%;
+    max-width: 340px;
+    height: auto;
+    background-color: #636262;
+    padding-bottom: 1em;
+}
+.tituloCardH3{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    margin-top: 0.5em;
+    padding-block: 1em;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+.linkCard{
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5em;
+    color: darkorange;
+    border: 0.1em solid darkorange;
+    border-radius: 0.5em;
+    padding: 0.1em 1em;
+    margin-bottom: 0.5em;
+    background-color: #636262;
+}

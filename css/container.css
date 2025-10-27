@@ -1,0 +1,20 @@
+.container{
+    background-color: #f4f4f4;
+    padding: 3em 1em;
+    border-top: 0.5em solid darkorange;
+    text-align: center;
+}
+.divSectionCard{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    padding-block: 2em;
+}
+.tituloH2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #333;
+    margin-block: 1em;
+}

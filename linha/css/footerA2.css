@@ -1,0 +1,38 @@
+.rodape{
+    background-color: #636262;
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    border-top: 0.2em solid darkorange;
+}
+.tituloRodape{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    padding-block: 2em;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+.linkRodape{
+    text-decoration: none;
+    padding: 0.5em 0.2em;
+    border-radius: 0.5em;
+    color: white;
+}
+.linkRodape:hover{
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5em;
+    color: darkorange;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    text-decoration: none;
+    border-radius: 0.5em;
+    padding: 0.1em;
+    background-color: #636262;
+}
+.textoRodape{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    color: white;
+    padding-bottom: 1em; 
+}

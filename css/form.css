@@ -1,0 +1,55 @@
+.mainForm {  
+    background-color: #636262;  
+    min-height: 100vh;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+}
+.formulario {  
+    display: flex;  
+    flex-direction: column;  
+    gap: 1em;  
+    width: 10%;  
+    max-width: 400px;  
+    margin: 0 auto; 
+    padding-block: 5em; 
+}
+.divNome, .divEmail {  
+    display: flex;  
+    justify-content: center; 
+    align-items: center; 
+    gap: 0.5em;  
+}
+.labelNome, .labelEmail {  
+    font-family: "Roboto", sans-serif;  
+    font-size: 1.2em;  
+    color: white; 
+    text-shadow: 0.1em 0.1em 0.2em black; 
+    width: 80px;  
+    text-align: right;  
+}
+.inputNome, .inputEmail {  
+    flex: 1;  
+    padding: 0.5em;  
+    border: 1px solid #ccc;  
+    border-radius: 0.5em;  
+    font-size: 1em;  
+    font-family: "Roboto", sans-serif;  
+}
+.inputNome:focus, .inputEmail:focus { 
+    border: none; 
+    border-bottom: 2px solid darkorange;  
+    outline: none;  
+}
+.botaoEnviar {
+    width: 100%;  
+    padding: 0.3em 1em;  
+    background-color: darkorange;  
+    color: white;  
+    border: none;  
+    border-radius: 0.5em;  
+    font-size: 1.2em;  
+    cursor: pointer;  
+    font-family: "Roboto", sans-serif; 
+    text-shadow: 0.1em 0.1em 0.2em black;  
+}

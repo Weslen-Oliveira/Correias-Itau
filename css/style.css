@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import 'form.css'; 
+@import 'topo.css';
+@import 'container.css';
+@import 'card.css';
+@import 'img.css';
+@import 'footer.css';
+@import 'grupoLinks.css';
+@import 'swiper.css';
+@import 'reset.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+@media (min-width: 300px){
+    /*Form*/
+.botaoEnviar {
+    width: 7em; 
+}
+    /*Topo*/
+.topo{
+    display: flex;
+    padding: 1.2em 0.2em;
+    font-size: 1.3em;
+}
+.tituloTopo{
+    text-align: center;
+    font-size: 1.8em;
+    margin: 0;
+}
+span{
+    font-size: 0.8em;
+}
+.linkTopo{
+    display: none;
+    font-size: 0.8em;
+    padding: 0 ;
+}
+    /*Section*/
+.container{
+    padding: 2em;
+}
+.divSectionCard{
+    padding-block: 1em;
+}
+.swiper{
+    width: 100%;
+    padding: 0;
+}
+.tituloH2{
+    font-size: 1.2em;
+}
+.card-content{
+    width: 40%;
+    display: flex;
+    gap: 1em;
+}
+.tituloCardH3{
+    font-size: 1em;
+}
+.linkCard{
+    font-size: 1em;
+}
+    /*Rodape*/
+.telefone, .redeSociais{
+    display: none;
+}
+.tituloRodape{
+    margin-block: 0.7em;
+}
+/* .divLinkRodape{
+    padding: 0.2em 0em;
+} */
+}
+@media (min-width: 600px){
+    .topo{
+        display: flex;
+        padding: 1.2em 0.6em;
+        font-size: 1.5em;
+    }
+    .tituloTopo{
+        font-size: 1em;
+    }
+    span{
+        font-size: 0.8em;
+    }
+    .linkTopo{
+        font-size: 0.6em;
+    }
+    .container{
+        padding: 2em;
+    }
+    .divSectionCard{
+        padding-block: 1em;
+    }
+    .tituloH2{
+        font-size: 1.5em;
+    }
+    .card-content{
+        width: 40%;
+        display: flex;
+        gap: 1em;
+    }
+    .tituloCardH3{
+        font-size: 1.2em;
+    }
+    .linkCard{
+        font-size: 1em;
+    }
+}
+@media (min-width: 1000px){
+    .topo{
+        display: flex;
+        padding: 1.2em 1em;
+        font-size: 2em;
+    }
+    .tituloTopo{
+        font-size: 2.2em;
+    }
+    span{
+        font-size: 0.5em;
+    }
+    .linkTopo{
+        font-size: 0.5em;
+    }
+    .container{
+        padding: 6em;
+    }
+    .divSectionCard{
+        padding-block: 0.5em;
+    }
+    .tituloH2{
+        font-size: 2em;
+        padding-bottom: 2em;
+    }
+    .card-content{
+        width: 40%;
+        display: flex;
+
+    }
+    .tituloCardH3{
+        font-size: 1.5em;
+    }
+    .linkCard{
+        font-size: 1.3em;
+    }
+    .telefone, .email, .redeSociais{
+    display: block;
+    display: flex;
+    }
+
+}
