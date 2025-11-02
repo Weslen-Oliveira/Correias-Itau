@@ -17,13 +17,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Telas >= 640px
             640: {
                 slidesPerView: 2,
+                loop: true,
             },
                 // Telas >= 1024px
             1024: {
                 slidesPerView: 3,
+                loop: true,
             },
             1400:{
-                slidesPerView: 4
+                slidesPerView: 4,
+                loop: true,
             }
         }
     });

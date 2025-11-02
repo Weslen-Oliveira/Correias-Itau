@@ -1,8 +1,13 @@
+html, body{
+    background-color: #e5e5e5;
+    overflow-x: hidden; /* Evita o scroll horizontal */
+    max-width: 100vw;
+}
 .titulo{
     font-size: 4em;
     font-weight: 700;
     text-align: center;
-    padding-block: 0.8em;
+    padding-block: 0.5em;
 }
 .subtitulo{
     text-align: center;
@@ -26,6 +31,7 @@
     color: darkorange;
 }
 .informacoes{
+    padding-block: 0.8em;
     display: grid;
 }
 .btnVerProjeto{
@@ -40,6 +46,7 @@
      background-color: rgb(27, 27, 233);
 }
 .conteudo{
+    font-family: 'IBM Mono', monospace;
     grid-template-columns:  repeat(3, 1fr);
     grid-template-rows: repeat(10, 1fr);
     grid-template-areas: 
@@ -48,57 +55,71 @@
         'Rc Rr CvtC SptR AltalhC AltalhR'
     ;
 }
+.cartoes{
+    border-radius: 0.8em;
+    background-color: #f2f2f2;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
 .CorrTransp{
     grid-area: CorrTransp;
     max-width: 80%;
     margin: auto;
     padding: 1em;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.divRolo{
+    display: flex;
+    justify-content: center;
+    gap: 0.4em;
 }
 .RoloMov{
+    max-width: 50%;
     grid-area: RoloMov;
-    padding: 1em;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-.Vedacao{
-    grid-area: Vedacao;
-    padding: 1em;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 1em;   
 }
 .RoloMotr{
+    max-width: 50%;
     grid-area: RoloMotr;
     padding: 1em;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.Vedacao{
+    grid-area: CorrTransp;
+    max-width: 80%;
+    margin: auto;
+    padding: 1em;
+}
+.divRoletes{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
 }
 .Rc{
     grid-area: Rc;
     padding: 1em;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .Rr{
     grid-area: Rr;
     padding: 1em;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.divCavaletes{
+    display: flex;
+    justify-content: center;
+    gap: 0.4em;
 }
 .CvtC{
     grid-area: CvtC;
     padding: 1em;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .SptR{
     grid-area: SptR;
     padding: 1em;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .AltalhC{
     grid-area: AltalhC;
     padding: 1em;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .AltalhR{
     grid-area: AltalhR;
     padding: 1em;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 /* === REGRAS RESPONSIVAS === */
 
@@ -161,6 +182,38 @@
         max-width: 95%;
     }
 }
+@media screen and (max-width: 768px) {
+    .conteudo {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'CorrTransp'
+            'RoloMov'
+            'Vedacao'
+            'RoloMotr'
+            'Rc'
+            'Rr'
+            'CvtC'
+            'SptR'
+            'AltalhC'
+            'AltalhR';
+        gap: 0.5em;
+        padding: 0.5em;
+    }
+    
+    .CorrTransp,
+    .Vedacao,
+    .RoloMov,
+    .RoloMotr {
+        max-width: 95%;
+    }
+    
+    .divRolo,
+    .divRoletes,
+    .divCavaletes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 /* Celular até 480px */
 @media screen and (max-width: 480px) {
@@ -189,8 +242,7 @@
     }
     
     .conteudo > div {
-        padding: 0.8em;
-        margin: 0.5em;
+        margin: auto;
     }
 }
 
@@ -206,7 +258,26 @@
     }
 } */
 /* Celular até 300px */
+@media screen and (max-width: 360px) {
+    .conteudo {
+        padding: 0.3em;
+    }
+    
+    .cartoes {
+        margin: 0.2em;
+        padding: 0.8em;
+    }
+    
+    .titulo {
+        font-size: 1.8em;
+        padding: 0.3em 0.5em;
+        word-break: break-word;
+    }
+}
 @media screen and (max-width: 300px) {
+    .topo{
+        max-width: 100%;
+    }
     .titulo {
         font-size: 1.5em;
         padding-block: 0.3em;
@@ -240,7 +311,6 @@
     }
     
     .conteudo > div {
-        padding: 0.6em;
         margin: 0.3em;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     }
@@ -253,6 +323,6 @@
     /* Garante que o grid ocupe toda a largura */
     .conteudo {
         grid-template-columns: 1fr;
-        gap: 0.5em;
+        
     }
 }

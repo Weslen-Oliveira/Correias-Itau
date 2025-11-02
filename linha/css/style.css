@@ -12,6 +12,7 @@
 @import 'grupoLinks.css';
 /* @import 'swiper.css'; */
 @import 'reset.css';
+@import 'modal.css';
 
 *{
     margin: 0;
