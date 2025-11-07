@@ -56,6 +56,7 @@ html, body{
     ;
 }
 .cartoes{
+    margin-block: 0.5em;
     border-radius: 0.8em;
     background-color: #f2f2f2;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);

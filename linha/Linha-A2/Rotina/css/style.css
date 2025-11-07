@@ -1,0 +1,11 @@
+.sectionRolo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px 0;
+}
+.roloMovido, .roloMotriz {
+    width: 30%;
+    margin: 40px auto;
+}
