@@ -36,6 +36,11 @@
     color: darkorange;
     text-shadow: 0.1em 0.1em 0.2em black;
 }
+@media(min-width: 300px){
+    .tituloTopo{
+        font-size: 1em;
+    }
+}
 
 
 
